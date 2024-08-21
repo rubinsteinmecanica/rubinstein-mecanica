@@ -1,16 +1,24 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Metadata } from "next";
 import { homeBanner } from "./lib/home-banners";
 import Carousel from "./ui/banner-table";
-
-export const metadata: Metadata = {
-  title: 'Home',
-};
+import Modal from "./ui/modal";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Automatically open the modal when the page loads
+    setIsModalOpen(true);
+  }, []);
+
   return (
     <main className="mt-12 pt-20 px-4 md:px-8 lg:px-12 bg-white text-black">
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
       {/* Header Section */}
       <div className="flex justify-center mb-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center tracking-wide">
