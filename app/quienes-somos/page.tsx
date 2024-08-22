@@ -39,22 +39,22 @@ export default function AboutUs() {
               Nuestro Fundador
             </h2>
             <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-700">
-              Rodrigo Saez Madrid, un joven aprendiz de mecánico, ingresó en el año 2001 a estudiar la carrera de
-              “Técnico en Mecánica Automotriz y Autotrónica” en la Universidad Federico Santa María...
+              Rodrigo Saez Madrid, un joven aprendiz de mecánico ingresa en el año 2001 a estudiar la Carrera Universitaria 
+              “Técnico en Mecánica Automotriz y Autotronica” en la Universidad Federico Santa Maria (Cede Viña del mar), 
+              egresando de la carrera el año 2002 y titulándose como un profesional de la Mecánica, luego realiza su practica 
+              profesional en Toyota Chile, aplicando sus conocimientos y formándose como mecánico. 
               {showMore && (
                 <>
                   <br />
                   <br />
-                  ... Luego, realizó su práctica profesional en Toyota Chile, aplicando sus conocimientos y formándose como mecánico.
-                  Ya para el año 2004, Rodrigo Saez se instaló con su propio taller de mecánica ubicado en Llolleo (San Antonio), al cual nombró
-                  “Mecánica R y R”, nombre conformado por las iniciales de Rodrigo y Rubinstein (su padre), quien le ayudaba en el taller.
-                  En noviembre de 2018 falleció Don Rubinstein Saez, motivo por el cual Rodrigo decidió cambiar el nombre del taller a “Rubinstein Mecánica Automotriz”,
-                  en memoria de su padre y mentor.
-                  <br />
-                  <br />
-                  Desde ese momento hasta hoy, Rubinstein Mecánica Automotriz sigue el legado del compromiso con sus clientes, entregando un servicio rápido y profesional,
-                  con un equipo de mecánicos con vasta experiencia en el rubro y personal calificado. Lideramos en servicios automotrices en la zona y perfeccionamos cada vez más nuestra visión:
-                  ofrecer un servicio de calidad con garantía de satisfacción.
+                  Ya para el año 2004, Rodrigo Saez, se instala con su propio taller de mecánica ubicado en llolleo (san Antonio), 
+                  el cual nombra ”Mecánica R y R”, nombre conformado por las iniciales de Rodrigo y Rubinstein (su Padre) quien le 
+                  ayudaba con la mecánica en taller. En Noviembre del 2018 fallece Don Rubinstein Saez, motivo por el cual Rodrigo 
+                  decide cambiar el nombre del taller a “Rubinstein Mecánica Automotriz”, en su memoria de su Padre y Mentor. 
+                  Desde ese momento hasta hoy en día, Rubinstein Mecánica Automotriz,  sigue el legado del compromiso con sus clientes, 
+                  entregando un servicio rápido y profesional, con un equipo de mecánicos con basta experiencia en el rubro y  un personal 
+                  calificado, para atender así todas las necesidades de nuestros clientes,  liderando en servicios automotrices en la zona 
+                  y perfeccionando cada vez mas nuestra visión, que es dar un servicio de calidad y con garantía de satisfacción.
                 </>
               )}
             </p>
