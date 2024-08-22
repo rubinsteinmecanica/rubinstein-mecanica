@@ -5,74 +5,68 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function AboutUs() {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
-  const handleToggleDetails = () => {
-    setShowDetails(!showDetails);
+  const handleToggleShowMore = () => {
+    setShowMore(!showMore);
   };
 
   return (
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Quiénes Somos</h1>
+      <div className="max-w-5xl mx-auto">
+        {/* Title Section */}
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-10 text-center text-navy-blue">
+          Quiénes Somos
+        </h1>
 
-        <div className="flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 p-4">
+        {/* Main Content Section */}
+        <div className="flex flex-col lg:flex-row items-center bg-white rounded-lg shadow-lg overflow-hidden">
+          {/* Image Section */}
+          <div className="lg:w-1/3 p-4 lg:p-6">
             <Image
               src="/acerca/mechanic.jpg"
-              width={700}
-              height={400}
+              width={500}
+              height={500}
               alt="Mechanic"
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-full h-auto object-cover rounded-lg transform hover:scale-105 transition duration-500"
               loading="lazy"
             />
           </div>
-          <div className="md:w-1/2 p-4">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Trabajos Garantizados</h2>
-            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
-              Contamos con un dotación de mecánicos calificados con una vasta experiencia. Cada vehículo antes
-              de salir del taller se vuelve a chequear por el mecánico jefe{" "}
-              <button
-                onClick={handleToggleDetails}
-                className="font-bold text-blue-800 hover:underline focus:outline-none"
-              >
-                Rodrigo Sáez Madrid
-              </button>, Técnico Universitario en Mecánica
-              Automotriz y Autotrónica, con más de 15 años en el rubro, para asegurarnos de entregar un servicio de calidad
-              y con garantía. Características que identifican a nuestro taller, dando así confianza a nuestros clientes.
-            </p>
-          </div>
-        </div>
-      </div>
 
-      {/* Details Banner */}
-      {showDetails && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4">Rodrigo Sáez Madrid</h2>
-            <Image
-              src="/acerca/rodrigo.jpg"
-              width={300}
-              height={200}
-              alt="Rodrigo Sáez Madrid"
-              className="w-full h-auto object-cover rounded-lg mb-4"
-              loading="lazy"
-            />
-            <p className="text-base sm:text-lg leading-relaxed mb-4">
-              Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica de la Universidad Técnica Federico
-              Santa Maria con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza
-              que cada vehículo reciba el mejor cuidado y reparación posible. Su experiencia y habilidades son fundamentales para ofrecer
-              un servicio excepcional en nuestro taller.
+          {/* Text Section */}
+          <div className="lg:w-2/3 p-6 lg:p-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-gray-800">
+              Nuestro Fundador
+            </h2>
+            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-700">
+              Rodrigo Saez Madrid, un joven aprendiz de mecánico, ingresó en el año 2001 a estudiar la carrera de
+              “Técnico en Mecánica Automotriz y Autotrónica” en la Universidad Federico Santa María...
+              {showMore && (
+                <>
+                  <br />
+                  <br />
+                  ... Luego, realizó su práctica profesional en Toyota Chile, aplicando sus conocimientos y formándose como mecánico.
+                  Ya para el año 2004, Rodrigo Saez se instaló con su propio taller de mecánica ubicado en Llolleo (San Antonio), al cual nombró
+                  “Mecánica R y R”, nombre conformado por las iniciales de Rodrigo y Rubinstein (su padre), quien le ayudaba en el taller.
+                  En noviembre de 2018 falleció Don Rubinstein Saez, motivo por el cual Rodrigo decidió cambiar el nombre del taller a “Rubinstein Mecánica Automotriz”,
+                  en memoria de su padre y mentor.
+                  <br />
+                  <br />
+                  Desde ese momento hasta hoy, Rubinstein Mecánica Automotriz sigue el legado del compromiso con sus clientes, entregando un servicio rápido y profesional,
+                  con un equipo de mecánicos con vasta experiencia en el rubro y personal calificado. Lideramos en servicios automotrices en la zona y perfeccionamos cada vez más nuestra visión:
+                  ofrecer un servicio de calidad con garantía de satisfacción.
+                </>
+              )}
             </p>
             <button
-              onClick={handleToggleDetails}
-              className="mt-4 w-full bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800 focus:outline-none"
+              onClick={handleToggleShowMore}
+              className="mt-4 text-blue-500 hover:text-blue-700 focus:outline-none"
             >
-              Cerrar
+              {showMore ? 'Leer menos' : 'Leer más'}
             </button>
           </div>
         </div>
-      )}
+      </div>
 
       {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
