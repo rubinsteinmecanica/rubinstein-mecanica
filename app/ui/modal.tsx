@@ -1,6 +1,7 @@
 import { FC, useEffect } from 'react';
 import Image from 'next/image';
-import { CheckCircleIcon } from '@heroicons/react/24/outline';
+import Link from 'next/link'; 
+import { CheckCircleIcon, ArrowRightIcon } from '@heroicons/react/24/outline'; // Import ArrowRightIcon
 
 interface ModalProps {
     isOpen: boolean;
@@ -31,6 +32,13 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
                         <div className="flex items-center justify-center md:justify-start mt-4">
                             <CheckCircleIcon className="h-6 w-6 text-green-500 mr-2" />
                             <h3 className="text-sm font-semibold">100% GARANTIZADO</h3>
+                        </div>
+                        {/* Enhanced Link */}
+                        <div className="mt-6">
+                            <Link href="/membresias" className="inline-flex items-center px-4 py-2 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    Aprende más sobre nuestros servicios exclusivos
+                                    <ArrowRightIcon className="h-5 w-5 ml-2" />
+                            </Link>
                         </div>
                     </div>
                 </div>
