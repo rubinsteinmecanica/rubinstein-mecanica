@@ -15,6 +15,11 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
         } else {
             document.body.style.overflow = 'auto';
         }
+
+        // Cleanup on unmount
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
     }, [isOpen]);
 
     if (!isOpen) return null;
@@ -35,7 +40,8 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
                         </div>
                         {/* Enhanced Link */}
                         <div className="mt-6">
-                            <Link href="/membresias" className="inline-flex items-center px-4 py-2 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            <Link href="/membresias" className="inline-flex items-center px-4 py-2 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                                   onClick={() => document.body.style.overflow = 'auto'}>
                                     Aprende más sobre nuestros servicios exclusivos
                                     <ArrowRightIcon className="h-5 w-5 ml-2" />
                             </Link>
@@ -57,7 +63,10 @@ const Modal: FC<ModalProps> = ({ isOpen, onClose }) => {
 
                 {/* Button Section */}
                 <button
-                    onClick={onClose}
+                    onClick={() => {
+                        onClose();
+                        document.body.style.overflow = 'auto';
+                    }}
                     className="bg-navy-blue text-white px-4 py-2 rounded-lg hover:bg-navy-700 transition-colors col-span-2"
                 >
                     Cerrar
