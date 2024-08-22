@@ -3,8 +3,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { CheckCircleIcon } from '@heroicons/react/24/outline'; // Import the icon you want to use
 
-export default function AboutUs() {
+export default function Garantia() {
   const [showDetails, setShowDetails] = useState(false);
 
   const handleToggleDetails = () => {
@@ -14,27 +15,29 @@ export default function AboutUs() {
   return (
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">Quiénes Somos</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-gray-800">
+          Nuestra Garantía
+        </h1>
 
-        <div className="flex flex-col md:flex-row items-center">
+        <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2 p-4">
             <Image
-              src="/acerca/mechanic.jpg"
+              src="/garantia/car.jpg"
               width={700}
               height={400}
               alt="Mechanic"
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-full h-auto object-cover rounded-lg shadow-lg"
               loading="lazy"
             />
           </div>
           <div className="md:w-1/2 p-4">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4">Trabajos Garantizados</h2>
-            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
-              Contamos con un dotación de mecánicos calificados con una vasta experiencia. Cada vehículo antes
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 text-gray-700">Trabajos Garantizados</h2>
+            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-600">
+              Contamos con una dotación de mecánicos calificados con una vasta experiencia. Cada vehículo antes
               de salir del taller se vuelve a chequear por el mecánico jefe{" "}
               <button
                 onClick={handleToggleDetails}
-                className="font-bold text-blue-800 hover:underline focus:outline-none"
+                className="font-bold text-blue-600 hover:underline focus:outline-none"
               >
                 Rodrigo Sáez Madrid
               </button>, Técnico Universitario en Mecánica
@@ -49,16 +52,16 @@ export default function AboutUs() {
       {showDetails && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4">Rodrigo Sáez Madrid</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Rodrigo Sáez Madrid</h2>
             <Image
               src="/acerca/rodrigo.jpg"
               width={300}
               height={200}
               alt="Rodrigo Sáez Madrid"
-              className="w-full h-auto object-cover rounded-lg mb-4"
+              className="w-full h-auto object-cover rounded-lg mb-4 shadow-lg"
               loading="lazy"
             />
-            <p className="text-base sm:text-lg leading-relaxed mb-4">
+            <p className="text-base leading-relaxed mb-4 text-gray-700">
               Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica de la Universidad Técnica Federico
               Santa Maria con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza
               que cada vehículo reciba el mejor cuidado y reparación posible. Su experiencia y habilidades son fundamentales para ofrecer
@@ -66,13 +69,21 @@ export default function AboutUs() {
             </p>
             <button
               onClick={handleToggleDetails}
-              className="mt-4 w-full bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800 focus:outline-none"
+              className="mt-4 w-full bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800 transition-colors"
             >
               Cerrar
             </button>
           </div>
         </div>
       )}
+
+      <div className="mt-12 mb-12 text-center bg-blue-800 bg-opacity-40 text-white py-8 px-6 rounded-lg shadow-2xl">
+        <div className="flex justify-center mb-4">
+          <CheckCircleIcon className="w-16 h-16 text-white" />
+        </div>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
+        <h3 className="text-xl md:text-2xl lg:text-3xl font-medium">Todos los trabajos con sello de garantía</h3>
+      </div>
 
       {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">

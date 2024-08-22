@@ -25,20 +25,22 @@ export default function TallerMultimarcas() {
           <CarTable carBrand={carBrand} />
         </div>
       </div>
-       {/* WhatsApp Icon */}
+      {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
-        <Link href="https://wa.me/56956608734"
+        <Link
+          href="https://wa.me/56956608734"
           target="_blank"
-          rel="nooper noreferrer"
-          className="block">
-            <Image
-              src="/whatsapp.png"
-              width={50}
-              height={50}
-              alt="Contacta con nosotros en WhatsApp"
-              className="hover:opacity-80 transition-transform transform hover:scale-110 hover:rotate-5"
-            />
-            <span className="sr-only">Contact Us on WhatsApp</span>
+          rel="noopener noreferrer"
+          className="block bg-green-500 rounded-full p-2 shadow-lg"
+        >
+          <Image
+            src="/whatsapp.png"
+            width={50}
+            height={50}
+            alt="Contacta con nosotros en WhatsApp"
+            className="hover:opacity-80 transition-transform transform hover:scale-110"
+          />
+          <span className="sr-only">Contact Us on WhatsApp</span>
         </Link>
       </div>
     </main>
