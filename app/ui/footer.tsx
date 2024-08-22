@@ -11,7 +11,7 @@ export default function Footer() {
                 {/* Address and Contact Info */}
                 <div className="flex flex-col items-center space-y-6 text-center">
                     <div className="w-full lg:w-2/3 space-y-6">
-                        <p className="text-lg font-semibold">Vista Hermosa 1071, San Antonio</p>
+                        <p className="text-lg font-semibold">Vista Hermosa 1070, San Antonio</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <p className="text-base">Rodrigo Sáez <br /> Mecánico Jefe</p>
