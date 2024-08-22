@@ -55,7 +55,7 @@ export default function Home() {
               layout="responsive"
               priority
             />
-            <Link href="/empresas" className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-md hover:bg-navy-700 transition-transform transform hover:scale-105">
+            <Link href="/membresias" className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-md hover:bg-navy-700 transition-transform transform hover:scale-105">
               EMPRESAS
             </Link>
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
               layout="responsive"
               priority
             />
-            <Link href="/particular" className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-md hover:bg-navy-700 transition-transform transform hover:scale-105">
+            <Link href="/membresias" className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-md hover:bg-navy-700 transition-transform transform hover:scale-105">
               PARTICULARES
             </Link>
           </div>
