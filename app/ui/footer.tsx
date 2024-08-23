@@ -14,10 +14,10 @@ export default function Footer() {
                         <p className="text-lg font-semibold">Vista Hermosa 1070, San Antonio</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <p className="text-base">Rodrigo Sáez <br /> Mecánico Jefe</p>
+                                <p className="text-base">Rodrigo Sáez M. <br /> Técnico en Mecánica Automotriz <br /> Mecánico Jefe</p>
                             </div>
                             <div>
-                                <p className="text-base">Cesar Chavarría <br /> Asesor Comercial</p>
+                                <p className="text-base">Cesar Chavarría A. <br /> Asesor Comercial <br /> Gestor Convenio Empresas</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -35,6 +35,7 @@ export default function Footer() {
                                 aria-label="Call Rubinstein"
                             >
                                 <PhoneIcon className="w-6 h-6" aria-hidden="true" />
+                                <p>Consultas y reservas de horas al</p>
                                 <span>+56 9 5660 8734</span>
                             </Link>
                         </div>
