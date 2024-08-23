@@ -2,6 +2,14 @@ import { Car } from "./definitions"
 
 export const carBrand: Car[] = [
     {
+        id: 'Peugeot',
+        image_url: '/logos/Peugeot.png',
+    },
+     {
+        id: 'Mazda',
+        image_url: '/logos/MAZDA.jpg',
+    },
+    {
         id: 'Nissan',
         image_url: '/logos/NISSAN.png',
     },
@@ -60,10 +68,6 @@ export const carBrand: Car[] = [
     {
         id: 'Dodge',
         image_url: '/logos/dodge.jpg',
-    },
-    {
-        id: 'Peugeot',
-        image_url: '/logos/Peugeot.png',
     },
     {
         id: 'Audi',
@@ -131,7 +135,7 @@ export const carBrand: Car[] = [
     },
     {
         id: 'Magindra',
-        image_url: '/logos/mahindra.jpg',
+        image_url: '/logos/MAHINDRA.png',
     },
     {
         id: 'Jaguar',
@@ -148,10 +152,6 @@ export const carBrand: Car[] = [
     {
         id: 'Daihatsu',
         image_url: '/logos/daihatsu.webp',
-    },
-    {
-        id: 'Mazda',
-        image_url: '/logos/MAZDA.jpg',
     },
     {
         id: 'Baic',
@@ -181,4 +181,12 @@ export const carBrand: Car[] = [
         id: 'Jetour',
         image_url: '/logos/jetour.png',
     },
+    {
+        id: "MINI",
+        image_url: '/logos/mini.jpg',
+    },
+    {
+        id: "GMC",
+        image_url: '/logos/GMC.jpg',
+    }
 ]

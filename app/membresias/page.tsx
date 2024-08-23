@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Membresias() {
     return (
@@ -39,10 +40,10 @@ export default function Membresias() {
             </section>
 
             {/* Membresias Section */}
-             <section className="text-center bg-gray-50 py-12 px-8 rounded-lg shadow-lg">
+            <section className="text-center bg-gray-50 py-12 px-8 rounded-lg shadow-lg">
                 <h1 className="text-4xl font-bold mb-4 text-navy-blue">MEMBRESIAS</h1>
                 <p className="text-lg mb-6 text-gray-700">
-                    Clientes con membresia tendran un servicio especial y descuentos para su vehículos.
+                    Clientes con membresia tendrán un servicio especial y descuentos para sus vehículos.
                 </p>
                 <div className="mb-8">
                     <h2 className="text-2xl font-semibold text-green-600">100% GARANTIZADO</h2>
@@ -59,7 +60,10 @@ export default function Membresias() {
                     />
                 </div>
             </section>
+
+            {/* Membership Plans */}
             <section className="mt-16 bg-gray-100 py-12 px-8 rounded-lg shadow-lg text-navy-blue space-y-12">
+                {/* Membership Lite */}
                 <div className="text-center">
                     <h1 className="text-3xl font-bold mb-4">
                         MEMBRESÍA <span className="text-red-600">LITE</span>
@@ -74,6 +78,11 @@ export default function Membresias() {
                         <li>10% Desc. cambio de aceite y filtro al año.</li>
                         <li>Trámites de revisión técnica, permiso de circulación y SOAP gratis (no incluye costo de permiso de circulación).</li>
                     </ul>
+                    <Link href="/join-lite">
+                        <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                            Join Now
+                        </button>
+                    </Link>
                 </div>
 
                 <hr className="border-gray-300 my-8" />
@@ -94,6 +103,11 @@ export default function Membresias() {
                         <li>50% Desc. cambio de aceite y filtro al año.</li>
                         <li>Trámites de revisión técnica, permiso de circulación y SOAP gratis (no incluye costo de permiso de circulación).</li>
                     </ul>
+                    <Link href="/join-plus">
+                        <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                            Join Now
+                        </button>
+                    </Link>
                 </div>
 
                 <hr className="border-gray-300 my-8" />
@@ -116,6 +130,11 @@ export default function Membresias() {
                         <li>Trámites de revisión técnica, permiso de circulación y SOAP gratis (no incluye costo de permiso de circulación).</li>
                         <li>1 lavado y aspirado del vehículo gratis al mes.</li>
                     </ul>
+                    <Link href="/join-premium">
+                        <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                            Join Now
+                        </button>
+                    </Link>
                 </div>
             </section>
         </main>

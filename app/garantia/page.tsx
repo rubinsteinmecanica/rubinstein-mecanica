@@ -41,7 +41,7 @@ export default function Garantia() {
               >
                 Rodrigo Sáez Madrid
               </button>, Técnico Universitario en Mecánica
-              Automotriz y Autotrónica, con más de 15 años en el rubro, para asegurarnos de entregar un servicio de calidad
+              Automotriz y Autotrónica, con más de 23 años en el rubro, para asegurarnos de entregar un servicio de calidad
               y con garantía. Características que identifican a nuestro taller, dando así confianza a nuestros clientes.
             </p>
           </div>
@@ -63,9 +63,9 @@ export default function Garantia() {
             />
             <p className="text-base leading-relaxed mb-4 text-gray-700">
               Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica de la Universidad Técnica Federico
-              Santa Maria con más de 15 años de experiencia en el campo. Su compromiso con la calidad y la atención al detalle garantiza
-              que cada vehículo reciba el mejor cuidado y reparación posible. Su experiencia y habilidades son fundamentales para ofrecer
-              un servicio excepcional en nuestro taller.
+              Santa Maria con más de 23 años de experiencia en el campo. Su compromiso con la calidad y la atención profesional garantiza
+              que cada vehículo reciba la mejor mantención y cuidado posible. Su experiencia y conocimiento en mecánica y electricidad son fundamentales para ofrecer
+              un servicio  de excelencia en nuestro taller.
             </p>
             <button
               onClick={handleToggleDetails}

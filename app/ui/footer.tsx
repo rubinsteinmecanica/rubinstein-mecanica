@@ -22,7 +22,7 @@ export default function Footer() {
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <Link
-                                href="mailto:rubinsteincontact@gmail.com"
+                                href="mailto:rubinsteincontacto@gmail.com"
                                 className="flex items-center justify-center space-x-2 text-white hover:text-gray-300 transition"
                                 aria-label="Email Rubinstein Contact"
                             >
@@ -58,7 +58,7 @@ export default function Footer() {
                     <h3 className="text-xl font-semibold mb-6">Colaboradores</h3>
                     <div className="flex flex-wrap justify-center gap-8 px-4">
                         {[
-                            { src: "/logos/colaboradores/def2.png", alt: "Rectomotors", name: "Rectomotors" },
+                            { src: "/logos/colaboradores/rectmotors_blanco.png", alt: "Rectomotors", name: "Rectomotors" },
                             { src: "/logos/colaboradores/controlplaga.png", alt: "Control Plaga San Antonio", name: "ControlPlaga" },
                             { src: "/logos/colaboradores/tallerpintura.png", alt: "Taller de pintura FF", name: "Taller FF" },
                             {src: "/logos/colaboradores/ocean.jpg", alt: "Estudio Creativo", name: "Oceano"}
