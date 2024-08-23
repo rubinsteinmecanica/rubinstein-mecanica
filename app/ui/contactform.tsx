@@ -80,7 +80,7 @@ export default function ContactForm() {
                             <option>Haval</option>
                             <option>Honda</option>
                             <option>Hummer</option>
-                            <option>Hyindai</option>
+                            <option>Hyundai</option>
                             <option>Infiniti</option>
                             <option>Isuzu</option>
                             <option>Jac</option>
