@@ -60,7 +60,7 @@ export default function Footer() {
                             { src: "/logos/colaboradores/def2.png", alt: "Rectomotors", name: "Rectomotors" },
                             { src: "/logos/colaboradores/controlplaga.png", alt: "Control Plaga San Antonio", name: "ControlPlaga" },
                             { src: "/logos/colaboradores/tallerpintura.png", alt: "Taller de pintura FF", name: "Taller FF" },
-                            {src: "/logos/colaboradores/oceano.png", alt: "Estudio Creativo", name: "OCEANO"}
+                            {src: "/logos/colaboradores/ocean.jpg", alt: "Estudio Creativo", name: "Oceano"}
                         ].map((collaborator, index) => (
                             <div key={index} className="flex flex-col items-center justify-center w-24 h-24 md:w-30 md:h-30 lg:w-40 lg:h-40 relative bg-white bg-opacity-10 rounded-lg overflow-hidden">
                                 <Image
