@@ -35,6 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+https://www.rubinsteinmecanica.com/
+
 https://github.com/rubinsteinmecanica/rubinstein-mecanica
 
 https://vercel.com/rubinsteinmecanicas-projects/rubinstein-mecanica
