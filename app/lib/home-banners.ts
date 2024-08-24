@@ -33,7 +33,7 @@ export const homeBanner: Carousel[] = [
     },
     {
         id: "repuestos",
-        imageUrl: "/home/servicios/repuestos.jpg",
+        imageUrl: "/home/servicios/repuestos.webp",
         title: "Repuestos",
         description: "Stock de Repuestos",
     },
@@ -45,7 +45,7 @@ export const homeBanner: Carousel[] = [
     },
       {
         id: "seguimiento",
-        imageUrl: "/home/servicios/seguimiento.jpg",
+        imageUrl: "/home/servicios/call.jpg",
         title: "Seguimiento en Línea",
         description: "Bítacora de Mantenciones",
     },
