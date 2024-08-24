@@ -52,8 +52,6 @@ export default function Home() {
               height={300}
               alt="Imagen de flota de coches para empresas"
               className="w-full h-auto mb-4 rounded-lg shadow-md"
-              layout="responsive"
-              priority
             />
             <Link href="/membresias" className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-md hover:bg-navy-700 transition-transform transform hover:scale-105">
               EMPRESAS
@@ -66,8 +64,6 @@ export default function Home() {
               height={300}
               alt="Imagen de un coche particular"
               className="w-full h-auto mb-4 rounded-lg shadow-md"
-              layout="responsive"
-              priority
             />
             <Link href="/membresias" className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-md hover:bg-navy-700 transition-transform transform hover:scale-105">
               PARTICULARES
