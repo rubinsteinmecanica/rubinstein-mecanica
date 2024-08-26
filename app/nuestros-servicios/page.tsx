@@ -4,9 +4,11 @@ import Link from "next/link";
 export default function Services() {
   return (
     <main className="mt-10 pt-20 bg-white">
+
       <section className="text-center mb-10">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Nuestros Servicios</h1>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">Nuestros Servicios</h1>
       </section>
+
       <section id="grua" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
         <div className="text-center md:text-left">
           <Image
@@ -189,6 +191,50 @@ export default function Services() {
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
 
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+        <div className="text-center md:text-left">
+          <Image
+            src="/servicios/grabado.webp"
+            width={700}
+            height={400}
+            alt="Mantenimiento"
+            className="w-full h-auto object-cover rounded-lg mx-auto md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] xl:w-[700px] xl:h-[400px]"
+            loading="lazy"
+          />
+        </div>
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Grabado de Patentes</h2>
+          <h3 className="text-xl font-bold mb-4 text-gray-600">Grabado de patente en espejos y vidrios</h3>
+          <p className="text-lg leading-relaxed text-gray-700">
+            En Rubinstein nos preocupamos que tu vehículo cumpla con la nueva ley de tránsito, según promulgación de la Ley 21.601,
+            que busca reducir el robo de piezas de vehículos.
+          </p>
+        </div>
+      </section>
+      <div className="border-t border-gray-300 mt-8 mb-8"></div>
+
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Recarga y Mantención de Extintores</h2>
+          <h3 className="text-xl font-bold mb-4 text-gray-600">Servicio de mantención certificada</h3>
+          <p className="text-lg leading-relaxed text-gray-700">
+            En Rubinstein nos preocupamos por tu seguridad y nos encargamos de chequeo y recarga del extintor de ty vehículo, para
+            que siempre estes protegido(a) frente a un posible incendio.
+          </p>
+        </div>
+        <div className="text-center md:text-left">
+          <Image
+            src="/servicios/extintores.webp"
+            width={700}
+            height={400}
+            alt="Seguimiento en Línea"
+            className="w-full h-auto object-cover rounded-lg mx-auto md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] xl:w-[700px] xl:h-[400px]"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <div className="border-t border-gray-300 mt-8 mb-8"></div>
+
 
       {/* Installation Section */}
       <section className="text-center mb-16 mt-16">
@@ -283,6 +329,73 @@ export default function Services() {
         </div>
       </section>
       <div className="border-t border-gray-300 mt-8 mb-8"></div>
+
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Polarizado de Vidrios</h2>
+          <h3 className="text-xl font-bold mb-4 text-gray-600">Polarizado de vidrios</h3>
+          <p className="text-lg leading-relaxed text-gray-700">
+            En Rubinstein respondemos a las necesidades de nuestros clientes y también entregamos el servicio de Polarizado
+            de vidrios, con certificación para tramites de revisión técnica.
+          </p>
+        </div>
+        <div className="text-center md:text-left">
+          <Image
+            src="/servicios/vidrio-polarizado.jpg"
+            width={700}
+            height={400}
+            alt="Radio y Cámara"
+            className="w-full h-auto object-cover rounded-lg mx-auto md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] xl:w-[700px] xl:h-[400px]"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <div className="border-t border-gray-300 mt-8 mb-8"></div>
+
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+        <div className="text-center md:text-left">
+          <Image
+            src="/servicios/rotulado.webp"
+            width={700}
+            height={400}
+            alt="Botón Start/Stop Engine"
+            className="w-full h-auto object-cover rounded-lg mx-auto md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] xl:w-[700px] xl:h-[400px]"
+            loading="lazy"
+          />
+        </div>
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Rotulado Vehicular</h2>
+          <h3 className="text-xl font-bold mb-4 text-gray-600">Rotulado Vehicular</h3>
+          <p className="text-lg leading-relaxed text-gray-700">
+            En Rubinstein respondemos a las necesidades de nuestros clientes y también entregamos el servicio de rotulado vehicular, tanto particulares o empresas, ya sea para fines publicitarios
+            o para la protección de la pintura, dado a las particularidades con sistema de impresión en látex, el cual tiene una durabilidad de 7 años sin pérdida de color. además de ser un material
+            que no se ralla, aumentando así la durabilidad de trabajo.
+          </p>
+        </div>
+      </section>
+      <div className="border-t border-gray-300 mt-8 mb-8"></div>
+
+      <section className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-10">
+        <div className="lg:max-w-[600px] lg:mx-auto xl:max-w-[700px] flex flex-col justify-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">Servicios de Publicidad</h2>
+          <h3 className="text-xl font-bold mb-4 text-gray-600">Impresión y diseño gráfico</h3>
+          <p className="text-lg leading-relaxed text-gray-700">
+            En Rubinstein contamos con servicios de publicidad tanto para empresas como a particulares, ofreciendo Windows Visión, Pendones, Letreros de acrílico, Gigantografías y Letras Volumétricas.
+          </p>
+        </div>
+        <div className="text-center md:text-left">
+          <Image
+            src="/servicios/publicidad.jpg"
+            width={700}
+            height={400}
+            alt="Radio y Cámara"
+            className="w-full h-auto object-cover rounded-lg mx-auto md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] xl:w-[700px] xl:h-[400px]"
+            loading="lazy"
+          />
+        </div>
+      </section>
+      <div className="border-t border-gray-300 mt-8 mb-8"></div>
+
       {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
         <Link
