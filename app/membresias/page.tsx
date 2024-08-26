@@ -4,41 +4,6 @@ import Link from "next/link";
 export default function Membresias() {
     return (
         <main className="mt-20 pt-10 bg-white">
-            {/* Convenios Section */}
-            <section className="text-center bg-gray-50 py-12 px-8 rounded-lg shadow-lg">
-                <h1 className="text-4xl font-bold mb-4 text-navy-blue">CONVENIOS</h1>
-                <p className="text-lg mb-6 text-gray-700">
-                    Clientes en convenio tendrán descuentos especiales y beneficios exclusivos para sus vehículos.
-                </p>
-                <div className="mb-8">
-                    <h2 className="text-2xl font-semibold text-green-600">100% GARANTIZADO</h2>
-                    <h3 className="text-xl font-medium text-gray-600">Atención Preferencial</h3>
-                </div>
-                <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-md">
-                    <Image
-                        src="/membresia/andrew.jpg"
-                        layout="fill"
-                        objectFit="cover"
-                        alt="auto"
-                        className="transition-transform transform hover:scale-105 duration-500"
-                        priority
-                    />
-                </div>
-            </section>
-
-            {/* Benefits Section */}
-            <section className="mt-12 bg-navy-blue text-white py-12 px-8 rounded-lg shadow-lg">
-                <h1 className="text-3xl font-bold mb-6 text-center">BENEFICIOS PARA CONVENIOS</h1>
-                <ul className="list-disc list-inside space-y-4 text-lg">
-                    <li>Retiro del vehículo en domicilio o trabajo para llevar al taller y entrega del mismo a domicilio después del arreglo (sin costo).</li>
-                    <li>1 lavado y aspirado gratis en la primera atención.</li>
-                    <li>1 escáner y chequeo gratis al año.</li>
-                    <li>1 cambio de ampolletas gratis al año.</li>
-                    <li>20% de descuento en instalación de inmovilizador, cierre centralizado y alarma.</li>
-                    <li>50% de descuento en trámites (revisión técnica y permiso de circulación).</li>
-                </ul>
-            </section>
-
             {/* Membresias Section */}
             <section className="text-center bg-gray-50 py-12 px-8 rounded-lg shadow-lg">
                 <h1 className="text-4xl font-bold mb-4 text-navy-blue">MEMBRESIAS</h1>
@@ -80,7 +45,7 @@ export default function Membresias() {
                     </ul>
                     <Link href="/join-lite">
                         <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
-                            Join Now
+                            Únete ahora
                         </button>
                     </Link>
                 </div>
@@ -105,7 +70,7 @@ export default function Membresias() {
                     </ul>
                     <Link href="/join-plus">
                         <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
-                            Join Now
+                            Únete ahora
                         </button>
                     </Link>
                 </div>
@@ -132,7 +97,7 @@ export default function Membresias() {
                     </ul>
                     <Link href="/join-premium">
                         <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
-                            Join Now
+                            Únete ahora
                         </button>
                     </Link>
                 </div>

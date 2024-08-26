@@ -53,7 +53,7 @@ export default function Home() {
               className="w-full h-auto mb-4 rounded-lg shadow-lg"
             />
             <Link
-              href="/membresias"
+              href="/convenios"
               className="inline-block px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 bg-navy-blue text-white font-semibold rounded-lg shadow-lg hover:bg-navy-700 transition-transform transform hover:scale-105"
             >
               EMPRESAS
