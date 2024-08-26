@@ -12,7 +12,7 @@ export default function Footer() {
                 {/* Collaborators */}
                 <div className="text-center">
                     <h3 className="text-2xl font-bold mb-6">Colaboradores</h3>
-                    <div className="flex flex-wrap justify-center gap-6 px-4">
+                    <div className="flex flex-wrap justify-center gap-12 px-4">
                         {[
                             { src: "/logos/colaboradores/rectmotors.jpg", href: "https://rectmotors.cl/", alt: "Rectomotors" },
                             { src: "/logos/colaboradores/ladybug.png", alt: "Control Plaga San Antonio" },
@@ -21,7 +21,7 @@ export default function Footer() {
                         ].map((collaborator, index) => (
                             <div
                                 key={index}
-                                className="flex items-center justify-center w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 overflow-hidden transform transition-transform duration-300 hover:scale-105"
+                                className="flex items-center justify-center w-20 h-20 md:w-22 md:h-22 lg:w-24 lg:h-24 overflow-hidden transform transition-transform duration-300 hover:scale-105"
                             >
                                 <Link href={collaborator.href || "#"} passHref target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                                         <Image
