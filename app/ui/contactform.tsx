@@ -12,7 +12,7 @@ export default function ContactForm() {
         const form = e.target as HTMLFormElement;
 
         const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID || "";
-        const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID || "";
+        const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID_1 || "";
         const userID = process.env.NEXT_PUBLIC_USER_ID || "";
 
         if (!serviceID || !templateID || !userID) {
@@ -22,7 +22,7 @@ export default function ContactForm() {
 
         try {
             await emailjs.sendForm(serviceID, templateID, form, userID);
-            setStatus("Mensaje enviado exitosamente!");
+            setStatus("¡Mensaje enviado con éxito! No olvides revisar tu carpeta de SPAM para nuestra respuesta.");
             form.reset();
         } catch (error) {
             setStatus("Error: Hay un error enviando tu mensaje. Intenta otra vez.");

@@ -60,7 +60,7 @@ export default function Convenios() {
             </section>
 
             <div className="text-center mt-12 mb-20">
-                <Link href="/join-lite" className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
+                <Link href="/joinUs" className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
                         Únete ahora
                 </Link>
             </div>

@@ -43,7 +43,7 @@ export default function Membresias() {
                         <li>10% Desc. cambio de aceite y filtro al año.</li>
                         <li>Trámites de revisión técnica, permiso de circulación y SOAP gratis (no incluye costo de permiso de circulación).</li>
                     </ul>
-                    <Link href="/join-lite">
+                    <Link href="/joinUs">
                         <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
                             Únete ahora
                         </button>
@@ -68,7 +68,7 @@ export default function Membresias() {
                         <li>50% Desc. cambio de aceite y filtro al año.</li>
                         <li>Trámites de revisión técnica, permiso de circulación y SOAP gratis (no incluye costo de permiso de circulación).</li>
                     </ul>
-                    <Link href="/join-plus">
+                    <Link href="/joinUs">
                         <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
                             Únete ahora
                         </button>
@@ -95,7 +95,7 @@ export default function Membresias() {
                         <li>Trámites de revisión técnica, permiso de circulación y SOAP gratis (no incluye costo de permiso de circulación).</li>
                         <li>1 lavado y aspirado del vehículo gratis al mes.</li>
                     </ul>
-                    <Link href="/join-premium">
+                    <Link href="/joinUs">
                         <button className="mt-8 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
                             Únete ahora
                         </button>
