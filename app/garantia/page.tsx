@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { CheckCircleIcon } from '@heroicons/react/24/outline'; // Import the icon you want to use
+import { CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function Garantia() {
   const [showDetails, setShowDetails] = useState(false);
@@ -15,14 +15,14 @@ export default function Garantia() {
   return (
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-gray-800">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-gray-800">
           Nuestra Garantía
         </h1>
 
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2 p-4">
             <Image
-              src="/garantia/car.jpg"
+              src="/garantia/taller.jpg"
               width={700}
               height={400}
               alt="Mechanic"
@@ -31,28 +31,28 @@ export default function Garantia() {
             />
           </div>
           <div className="md:w-1/2 p-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 text-gray-700">Trabajos Garantizados</h2>
-            <p className="text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-600">
-              Contamos con una dotación de mecánicos calificados con una vasta experiencia. Cada vehículo antes
-              de salir del taller se vuelve a chequear por el mecánico jefe{" "}
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 text-gray-700">
+              Trabajos Garantizados
+            </h2>
+            <p className="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600">
+              Contamos con un equipo de mecánicos calificados con amplia experiencia. Cada vehículo es revisado
+              meticulosamente por nuestro jefe de taller,{" "}
               <button
                 onClick={handleToggleDetails}
                 className="font-bold text-blue-600 hover:underline focus:outline-none"
               >
                 Rodrigo Sáez Madrid
-              </button>, Técnico Universitario en Mecánica
-              Automotriz y Autotrónica, con más de 23 años en el rubro, para asegurarnos de entregar un servicio de calidad
-              y con garantía. Características que identifican a nuestro taller, dando así confianza a nuestros clientes.
+              </button>, para garantizar la calidad de nuestro servicio y ofrecer una garantía sólida que inspira confianza en nuestros clientes.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Details Banner */}
+      {/* Details Modal */}
       {showDetails && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
-            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Rodrigo Sáez Madrid</h2>
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800">Rodrigo Sáez Madrid</h2>
             <Image
               src="/acerca/rodrigo.jpg"
               width={300}
@@ -61,15 +61,14 @@ export default function Garantia() {
               className="w-full h-auto object-cover rounded-lg mb-4 shadow-lg"
               loading="lazy"
             />
-            <p className="text-base leading-relaxed mb-4 text-gray-700">
+            <p className="text-base sm:text-lg leading-relaxed mb-4 text-gray-700">
               Rodrigo Sáez Madrid es un Técnico Universitario en Mecánica Automotriz y Autotrónica de la Universidad Técnica Federico
               Santa Maria con más de 23 años de experiencia en el campo. Su compromiso con la calidad y la atención profesional garantiza
-              que cada vehículo reciba la mejor mantención y cuidado posible. Su experiencia y conocimiento en mecánica y electricidad son fundamentales para ofrecer
-              un servicio  de excelencia en nuestro taller.
+              que cada vehículo reciba la mejor mantención y cuidado posible.
             </p>
             <button
               onClick={handleToggleDetails}
-              className="mt-4 w-full bg-blue-700 text-white py-2 rounded-md hover:bg-blue-800 transition-colors"
+              className="mt-4 w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition-colors"
             >
               Cerrar
             </button>
@@ -77,12 +76,12 @@ export default function Garantia() {
         </div>
       )}
 
-      <div className="mt-12 mb-12 text-center bg-blue-800 bg-opacity-40 text-white py-8 px-6 rounded-lg shadow-2xl">
+      <div className="mt-12 mb-12 text-center bg-blue-700 text-white py-8 px-6 rounded-lg shadow-2xl">
         <div className="flex justify-center mb-4">
           <CheckCircleIcon className="w-16 h-16 text-white" />
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
-        <h3 className="text-xl md:text-2xl lg:text-3xl font-medium">Todos los trabajos con sello de garantía</h3>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4">Todos los Vehículos con Checkout de Garantía</h2>
+        <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Trabajos con sello de garantía</h3>
       </div>
 
       {/* WhatsApp Icon */}
