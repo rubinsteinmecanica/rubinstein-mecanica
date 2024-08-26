@@ -16,7 +16,7 @@ export default function Footer() {
                         {[
                             { src: "/logos/colaboradores/rectmotors.jpg", href: "https://rectmotors.cl/", alt: "Rectomotors" },
                             { src: "/logos/colaboradores/ladybug.png", alt: "Control Plaga San Antonio" },
-                            { src: "/logos/colaboradores/tallerpintura.png", alt: "Taller de pintura FF" },
+                            { src: "/logos/colaboradores/pintura.jpg", alt: "Taller de pintura FF" },
                             { src: "/logos/colaboradores/oceano.png", alt: "Estudio Creativo" }
                         ].map((collaborator, index) => (
                             <div
