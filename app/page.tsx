@@ -60,7 +60,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
           <div className="flex flex-col items-center">
             <Image
-              src="/home/cars.jpg"
+              src="/home/flota-empresa.jpg"
               width={600}
               height={300}
               alt="Imagen de flota de coches para empresas"
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-center">
             <Image
-              src="/home/car.jpg"
+              src="/home/particular.jpg"
               width={600}
               height={300}
               alt="Imagen de un coche particular"
