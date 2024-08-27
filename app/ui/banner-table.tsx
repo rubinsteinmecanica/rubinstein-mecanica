@@ -40,7 +40,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         >
           {slides.map((slide) => (
             <div key={slide.id} className="min-w-full relative">
-              <div className="w-full h-[400px] overflow-hidden relative">
+              <div className="w-full h-[400px] lg:h-[600px] overflow-hidden relative">
                 <Image
                   src={slide.imageUrl}
                   alt={slide.title}
