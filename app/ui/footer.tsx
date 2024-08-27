@@ -12,27 +12,30 @@ export default function Footer() {
                 {/* Collaborators */}
                 <div className="text-center">
                     <h3 className="text-2xl font-bold mb-6">Colaboradores</h3>
-                    <div className="flex flex-wrap justify-center gap-12 px-4">
+                    <div className="flex flex-wrap justify-center gap-8 px-4">
                         {[
-                            { src: "/logos/colaboradores/rectmotors.jpg", href: "https://rectmotors.cl/", alt: "Rectomotors" },
-                            { src: "/logos/colaboradores/ladybug.png", alt: "Control Plaga San Antonio" },
-                            { src: "/logos/colaboradores/tallerpintura.png", alt: "Taller de pintura FF" },
-                            { src: "/logos/colaboradores/oceano.png", alt: "Estudio Creativo" }
+                            { src: "/logos/colaboradores/rectmotors.jpg", href: "https://rectmotors.cl/", alt: "Rectomotors", name: "Rectificadora" },
+                            { src: "/logos/colaboradores/ladybug.png", href: "", alt: "Control Plaga San Antonio", name: "Control Plagas" },
+                            { src: "/logos/colaboradores/tallerpintura.png", href: "", alt: "Taller de pintura FF", name: "Taller de Pintura" },
+                            { src: "/logos/colaboradores/oceano.png", href: "", alt: "Estudio Creativo", name: "Publicidad" }
                         ].map((collaborator, index) => (
                             <div
                                 key={index}
-                                className="flex items-center justify-center w-20 h-20 md:w-22 md:h-22 lg:w-24 lg:h-24 overflow-hidden transform transition-transform duration-300 hover:scale-105"
+                                className="relative flex flex-col items-center justify-center w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 overflow-hidden transform transition-transform duration-300 hover:scale-105"
                             >
                                 <Link href={collaborator.href || "#"} passHref target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                                        <Image
-                                            src={collaborator.src}
-                                            alt={collaborator.alt}
-                                            layout="fill"
-                                            objectFit="contain"
-                                            className="rounded-lg"
-                                            loading="lazy"
-                                        />
+                                    <Image
+                                        src={collaborator.src}
+                                        alt={collaborator.alt}
+                                        layout="fill"
+                                        objectFit="contain"
+                                        className="rounded-lg"
+                                        loading="lazy"
+                                    />
                                 </Link>
+                                <p className="absolute bottom-0 left-0 right-0 text-xs md:text-sm font-medium text-gray-200 bg-black text-center">
+                                    {collaborator.name}
+                                </p>
                             </div>
                         ))}
                     </div>
