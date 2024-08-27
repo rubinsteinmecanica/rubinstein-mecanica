@@ -9,3 +9,10 @@ export type Carousel = {
     title: string;
     description?: string;
 };
+
+export type Services = {
+    id: string;
+    name: string;
+    description: string;
+    image_url: string;
+}

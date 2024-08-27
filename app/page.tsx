@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ServiciosPrincipales from "./ui/services";
+import { MainServices } from "./lib/placeholder-services";
 import { homeBanner } from "./lib/home-banners";
 import Carousel from "./ui/banner-table";
 import Modal from "./ui/modal";
@@ -17,7 +19,7 @@ export default function Home() {
 
   return (
     <main className="bg-white text-black mt-12 pt-20 px-4 sm:px-6 md:px-8 lg:px-12">
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {/* <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} /> */}
 
       {/* Header Section */}
       <div className="text-center mb-12">
@@ -26,9 +28,21 @@ export default function Home() {
         </h1>
       </div>
 
+      {/* Services Section */}
+      <section className="mb-12">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide">
+            Rubinstein Mecánica Integral
+          </h2>
+        </div>
+        <div>
+          <ServiciosPrincipales MainServices={MainServices} />
+        </div>
+      </section>
+
       {/* Carousel Section */}
       <section className="pb-10">
-        <Carousel slides={homeBanner} />
+        {/* <Carousel slides={homeBanner} /> */}
       </section>
 
       {/* Additional Information Section */}
