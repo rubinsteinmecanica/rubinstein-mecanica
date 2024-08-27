@@ -4,35 +4,34 @@ import { Services } from '@/app/lib/definitions';
 
 export default function ServiciosPrincipales({ MainServices }: { MainServices: Services[] }) {
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
             {MainServices.length === 0 ? (
                 <p className="col-span-full text-center text-gray-600 text-lg">
                     No hay servicios disponibles por el momento.
                 </p>
             ) : (
-                MainServices.map((services) => (
+                MainServices.map((service) => (
                     <div
-                        key={services.id}
-                        className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                        key={service.id}
+                        className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                     >
-                        <div className="relative">
+                        <div className="relative h-60">
                             <Link
-                                href={`/servicios/${services.id}`}
-                                target="_blank"
+                                href={`/servicios/${service.id}`}
                                 className="block"
                             >
                                 <Image
-                                    src={services.image_url || "/default-car-image.png"}
-                                    alt={`Image of ${services.name}`}
-                                    width={300}
-                                    height={200}
-                                    className="w-full h-auto object-cover"
+                                    src={service.image_url || "/default-car-image.png"}
+                                    alt={`Image of ${service.name}`}
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="w-full h-full"
                                 />
                             </Link>
                         </div>
                         <div className="p-4">
-                            <p className="text-lg font-semibold text-gray-800">
-                                {services.name}
+                            <p className="text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-200">
+                                {service.name}
                             </p>
                         </div>
                     </div>
