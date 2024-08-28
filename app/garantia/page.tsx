@@ -14,7 +14,7 @@ export default function Garantia() {
 
   return (
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto lg:px-8 lg:py-8">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-gray-800">
           Nuestra Garantía
         </h1>
@@ -82,8 +82,7 @@ export default function Garantia() {
           </div>
         </div>
       )}
-
-      <div className="mt-12 mb-12 text-center bg-blue-700 text-white py-8 px-6 rounded-lg shadow-2xl">
+      <div className="mt-12 mb-12 text-center bg-blue-700 text-white py-8 px-6 rounded-lg shadow-2xl max-w-4xl mx-auto">
         <div className="flex justify-center mb-4">
           <CheckCircleIcon className="w-16 h-16 text-white" />
         </div>
