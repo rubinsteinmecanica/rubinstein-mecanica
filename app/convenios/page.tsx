@@ -43,7 +43,7 @@ export default function Convenios() {
             </section>
 
             {/* Benefits Section */}
-            <section className="mt-12 bg-navy-blue text-white py-12 px-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+            <section className="mt-12 mb-10 bg-navy-blue text-white py-12 px-8 rounded-lg shadow-lg max-w-4xl mx-auto">
                 <h1 className="text-3xl font-bold mb-6 text-center tracking-wide">
                     BENEFICIOS PARA CONVENIOS
                 </h1>
@@ -59,11 +59,11 @@ export default function Convenios() {
                 </ul>
             </section>
 
-            <div className="text-center mt-12 mb-20">
+            {/* <div className="text-center mt-12 mb-20">
                 <Link href="/joinUs" className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
                         Únete ahora
                 </Link>
-            </div>
+            </div> */}
         </main>
     );
 }

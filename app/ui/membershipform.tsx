@@ -61,15 +61,16 @@ export default function MembershipForm() {
                     </div>
 
                     <div>
-                        <label htmlFor="membership" className="block text-sm font-medium text-gray-700">Membresía o Convenio*</label>
+                        <label htmlFor="membership" className="block text-sm font-medium text-gray-700">Membresía*</label>
                         <select id="membership" name="membership" required aria-required="true" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500" onChange={handleSelectChange}>
                             <option value="" disabled>Selecciona una opción</option>
-                            <option value="Convenio">Convenio</option>
-                            <option value="Membresia">Membresía</option>
+                            <option value="lite">Membresía Lite</option>
+                            <option value="plus">Membresía Plus</option>
+                            <option value="premium">Membresía Premium</option>
                         </select>
                     </div>
 
-                    {selectedOption === "Membresia" && (
+                    {/* {selectedOption === "Membresia" && (
                         <div>
                             <label htmlFor="membershipType" className="block text-sm font-medium text-gray-700">Tipo de Membresía*</label>
                             <select id="membershipType" name="membershipType" required aria-required="true" className="mt-1 block w-full rounded-md border border-gray-300 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500">
@@ -79,7 +80,7 @@ export default function MembershipForm() {
                                 <option value="Premium">Membresía Premium</option>
                             </select>
                         </div>
-                    )}
+                    )} */}
 
                     <div>
                         <label htmlFor="message" className="block text-sm font-medium text-gray-700">Información adicional</label>

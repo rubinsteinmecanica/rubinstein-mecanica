@@ -17,10 +17,10 @@ export default function ServiciosPrincipales({ MainServices }: { MainServices: S
                             className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:scale-105"
                         >
                             <div className="relative h-48 lg:h-60">
-                                <Link
+                                {/* <Link
                                     href={`/servicios/${service.id}`}
                                     className="block"
-                                >
+                                > */}
                                     <Image
                                         src={service.image_url || "/default-car-image.png"}
                                         alt={`Image of ${service.name}`}
@@ -28,7 +28,7 @@ export default function ServiciosPrincipales({ MainServices }: { MainServices: S
                                         objectFit="cover"
                                         className="w-full h-full"
                                     />
-                                </Link>
+                                {/* </Link> */}
                             </div>
                             <div className="p-4">
                                 <p className="text-base lg:text-lg font-semibold text-gray-800 hover:text-blue-600 transition-colors duration-200">

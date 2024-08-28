@@ -7,7 +7,7 @@ export default function JoinUs() {
                 <header className="text-center mb-6">
                     <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800">Únete a nosotros</h1>
                     <p className="text-gray-600 mt-2 text-sm md:text-base">
-                        Completa el formulario a continuación para agendar una cita. Nos pondremos en contacto contigo lo antes posible.
+                        Completa el formulario a continuación para inscribirte y obtener los descuentos de la membresía. Nos pondremos en contacto contigo lo antes posible.
                     </p>
                 </header>
 
