@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Membresias() {
     return (
-        <main className="mt-20 pt-10 bg-white">
+        <main className="mt-20 pt-10 mb-10 bg-white">
             {/* Membresias Section */}
-            <section className="text-center bg-gray-50 py-12 px-8 rounded-lg shadow-lg">
+            <section className="max-w-screen-lg mx-auto text-center bg-gray-50 py-12 px-8 rounded-lg shadow-lg">
                 <h1 className="text-4xl font-bold mb-4 text-navy-blue">MEMBRESIAS</h1>
                 <p className="text-lg mb-6 text-gray-700">
                     Clientes con membresia tendrán un servicio especial y descuentos para sus vehículos.
@@ -27,7 +27,7 @@ export default function Membresias() {
             </section>
 
             {/* Membership Plans */}
-            <section className="mt-16 bg-gray-100 py-12 px-8 rounded-lg shadow-lg text-navy-blue space-y-12">
+            <section className="max-w-screen-lg mx-auto mt-16 bg-gray-100 py-12 px-8 rounded-lg shadow-lg text-navy-blue space-y-12">
                 {/* Membership Lite */}
                 <div className="text-center">
                     <h1 className="text-3xl font-bold mb-4">
