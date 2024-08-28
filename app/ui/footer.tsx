@@ -15,15 +15,26 @@ export default function Footer() {
                     <div className="flex flex-wrap justify-center gap-8 px-4">
                         {[
                             { src: "/logos/colaboradores/rectmotors.jpg", href: "https://rectmotors.cl/", alt: "Rectomotors", name: "Rectificadora" },
-                            { src: "/logos/colaboradores/ladybug.png", href: "", alt: "Control Plaga San Antonio", name: "Control Plagas" },
-                            { src: "/logos/colaboradores/tallerpintura.png", href: "", alt: "Taller de pintura FF", name: "Taller de Pintura" },
-                            { src: "/logos/colaboradores/oceano.png", href: "", alt: "Estudio Creativo", name: "Publicidad" }
+                            { src: "/logos/colaboradores/ladybug.png", href: "#", alt: "Control Plaga San Antonio", name: "Control Plagas" },
+                            { src: "/logos/colaboradores/tallerpintura.png", href: "#", alt: "Taller de pintura FF", name: "Taller de Pintura" },
+                            { src: "/logos/colaboradores/oceano.png", href: "#", alt: "Estudio Creativo", name: "Publicidad" }
                         ].map((collaborator, index) => (
                             <div
                                 key={index}
                                 className="relative flex flex-col items-center justify-center w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 overflow-hidden transform transition-transform duration-300 hover:scale-105"
                             >
-                                <Link href={collaborator.href || "#"} passHref target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                                <Link
+                                    href={collaborator.href || "#"}
+                                    passHref
+                                    target={collaborator.href ? "_blank" : undefined}
+                                    rel="noopener noreferrer"
+                                    className="block w-full h-full"
+                                    onClick={(e) => {
+                                        if (!collaborator.href) {
+                                            e.preventDefault(); // Prevent navigation if href is empty
+                                        }
+                                    }}
+                                >
                                     <Image
                                         src={collaborator.src}
                                         alt={collaborator.alt}
