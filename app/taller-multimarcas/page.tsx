@@ -8,7 +8,7 @@ export default function TallerMultimarcas() {
     <main className="mt-20 pt-10 bg-gray-100">
       <div className="container mx-auto px-4">
         <section className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">
             Taller Multimarca en San Antonio
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-6">

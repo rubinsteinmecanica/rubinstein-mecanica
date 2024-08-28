@@ -13,10 +13,10 @@ export default function AboutUs() {
 
   return (
     <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-4xl mx-auto">
         {/* Title Section */}
-        <section className="text-center mb-16">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 text-center text-navy-blue">
+        <section className="text-center mb-10">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">
             Quiénes Somos
           </h1>
         </section>

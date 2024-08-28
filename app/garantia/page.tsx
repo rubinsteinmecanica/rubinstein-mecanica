@@ -13,14 +13,14 @@ export default function Garantia() {
   };
 
   return (
-    <main className="mt-10 pt-20 px-4 md:px-8 lg:px-16 bg-gray-50">
+    <main className="mt-10 pt-10 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-4xl mx-auto lg:px-8 lg:py-8">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-gray-800">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">
           Nuestra Garantía
         </h1>
 
-        <div className="flex flex-col md:flex-row items-center mb-12">
-          <div className="md:w-1/2 p-4 relative"> {/* Added relative positioning */}
+        <div className="flex flex-col bg-white md:flex-row items-center mb-12 lg:p-8 lg:max-w-5xl lg:mx-auto rounded-lg shadow-lg">
+          <div className="md:w-1/2 p-4 relative">
             <Image
               src="/garantia/car.jpg"
               width={700}
@@ -55,7 +55,6 @@ export default function Garantia() {
         </div>
       </div>
 
-      {/* Details Modal */}
       {showDetails && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
@@ -82,6 +81,7 @@ export default function Garantia() {
           </div>
         </div>
       )}
+
       <div className="mt-12 mb-12 text-center bg-blue-700 text-white py-8 px-6 rounded-lg shadow-2xl max-w-4xl mx-auto">
         <div className="flex justify-center mb-4">
           <CheckCircleIcon className="w-16 h-16 text-white" />
@@ -90,7 +90,6 @@ export default function Garantia() {
         <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Trabajos con sello de garantía</h3>
       </div>
 
-      {/* WhatsApp Icon */}
       <div className="fixed bottom-4 right-4 z-50">
         <Link
           href="https://wa.me/56956608734"
