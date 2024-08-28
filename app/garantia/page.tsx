@@ -13,7 +13,7 @@ export default function Garantia() {
   };
 
   return (
-    <main className="mt-10 pt-10 px-4 md:px-8 lg:px-16 bg-gray-50">
+    <main className="mt-20 pt-10 px-4 md:px-8 lg:px-16 bg-gray-50">
       <div className="max-w-4xl mx-auto lg:px-8 lg:py-8">
         <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">
           Nuestra Garantía
