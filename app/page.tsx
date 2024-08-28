@@ -39,7 +39,7 @@ export default function Home() {
 
             {/* Carousel Section */}
             <section className="pb-10">
-                {/* <Carousel slides={homeBanner} /> */}
+                <Carousel slides={homeBanner} />
             </section>
 
             {/* Additional Information Section */}

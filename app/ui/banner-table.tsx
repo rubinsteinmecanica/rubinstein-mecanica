@@ -26,13 +26,13 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
   };
 
   useEffect(() => {
-    const interval = setInterval(goToNextSlide, 4000); // Change slides every 3 seconds
+    const interval = setInterval(goToNextSlide, 4000); // Change slides every 4 seconds
 
     return () => clearInterval(interval); // Clear interval on component unmount
   }, [goToNextSlide]);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden max-w-4xl mx-auto">
       <div className="relative">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -40,7 +40,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
         >
           {slides.map((slide) => (
             <div key={slide.id} className="min-w-full relative">
-              <div className="w-full h-[400px] lg:h-[600px] overflow-hidden relative">
+              <div className="w-full h-[250px] md:h-[300px] lg:h-[350px] overflow-hidden relative">
                 <Image
                   src={slide.imageUrl}
                   alt={slide.title}
@@ -49,33 +49,33 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                   priority
                 />
               </div>
-              <div className="absolute bottom-10 left-0 bg-black bg-opacity-50 text-white p-4 rounded-t-lg">
-                <h3 className="text-xl font-bold">{slide.title}</h3>
-                <p>{slide.description}</p>
+              <div className="absolute bottom-4 left-0 bg-black bg-opacity-50 text-white p-4 rounded-t-lg w-full">
+                <h3 className="text-lg md:text-xl font-bold">{slide.title}</h3>
+                <p className="text-sm md:text-base">{slide.description}</p>
               </div>
             </div>
           ))}
         </div>
         <button
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-700 transition text-sm sm:text-base"
           onClick={goToPrevSlide}
           aria-label="Previous Slide"
         >
-          <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
           </svg>
         </button>
         <button
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full shadow-lg hover:bg-gray-700 transition"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 sm:p-3 rounded-full shadow-lg hover:bg-gray-700 transition text-sm sm:text-base"
           onClick={goToNextSlide}
           aria-label="Next Slide"
         >
-          <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
           </svg>
         </button>
       </div>
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {slides.map((_, index) => (
           <button
             key={index}
