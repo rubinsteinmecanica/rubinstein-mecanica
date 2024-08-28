@@ -136,7 +136,7 @@ export default function Services() {
           </div>
           <div className="text-center md:text-left">
             <Image
-              src="/servicios/repuestos.jpg"
+              src="/servicios/repuestos.webp"
               width={700}
               height={400}
               alt="Repuestos"
