@@ -22,7 +22,7 @@ export default function Garantia() {
         <div className="flex flex-col md:flex-row items-center mb-12">
           <div className="md:w-1/2 p-4">
             <Image
-              src="/garantia/taller.jpg"
+              src="/garantia/car.jpg"
               width={700}
               height={400}
               alt="Mechanic"

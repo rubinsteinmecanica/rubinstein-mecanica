@@ -26,7 +26,7 @@ export default function AboutUs() {
           {/* Image Section */}
           <div className="lg:w-1/2 p-4 lg:p-6">
             <Image
-              src="/acerca/mechanic.jpg"
+              src="/acerca/taller.jpg"
               width={500}
               height={500}
               alt="Mechanic"
