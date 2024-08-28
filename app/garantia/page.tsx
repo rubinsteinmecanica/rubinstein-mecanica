@@ -20,7 +20,7 @@ export default function Garantia() {
         </h1>
 
         <div className="flex flex-col md:flex-row items-center mb-12">
-          <div className="md:w-1/2 p-4">
+          <div className="md:w-1/2 p-4 relative"> {/* Added relative positioning */}
             <Image
               src="/garantia/car.jpg"
               width={700}
@@ -28,6 +28,13 @@ export default function Garantia() {
               alt="Mechanic"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
               loading="lazy"
+            />
+            <Image
+              src="/garantia/calidad.png"
+              width={200}
+              height={200}
+              alt="garantia"
+              className="absolute bottom-0 right-0"
             />
           </div>
           <div className="md:w-1/2 p-4">

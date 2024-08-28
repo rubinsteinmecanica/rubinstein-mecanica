@@ -47,7 +47,7 @@ export const MainServices: Services[] = [
         id: "electricidad",
         name: "Electricidad",
         description: "",
-        image_url: "/home/electricidad.webp",
+        image_url: "/home/electricidad.jpg",
     },
     {
         id: "inyeccion",
@@ -60,5 +60,17 @@ export const MainServices: Services[] = [
         name: "Lubricación",
         description: "",
         image_url: "/home/lubricante.png",
+    },
+    {
+        id: "diferencial",
+        name: "Diferencial",
+        description: "",
+        image_url: "/home/diferencial.webp",
+    },
+    {
+        id: "electronica",
+        name: "Electrónica",
+        description: "",
+        image_url: "/home/electronica.webp",
     },
 ]
