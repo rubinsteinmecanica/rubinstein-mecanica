@@ -11,10 +11,10 @@ export default function TallerMultimarcas() {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">
             Taller Multimarca en San Antonio
           </h1>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-6">
+          {/* <p className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-6">
             Tu socio confiable para todas tus necesidades de reparación de automóviles.
-          </p>
-          <p className="text-base md:text-lg text-gray-600">
+          </p> */}
+          <p className="text-base md:text-xl text-gray-600">
             En Rubinstein tenemos la tecnología para escanear, mantener y reparar vehículos de todas las marcas.
           </p>
         </section>
@@ -23,9 +23,9 @@ export default function TallerMultimarcas() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-800 mb-6">
             Marcas con las que Trabajamos
           </h2>
-          <p className="text-base md:text-lg text-gray-600 mb-8">
+          {/* <p className="text-base md:text-lg text-gray-600 mb-8">
             Descubre las marcas que confían en nuestro servicio.
-          </p>
+          </p> */}
           <div className="max-w-5xl mx-auto">
             <CarTable carBrand={carBrand} />
           </div>

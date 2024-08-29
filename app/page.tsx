@@ -41,6 +41,7 @@ export default function Home() {
 
       {/* Carousel Section */}
       <section className="pb-10">
+        <h2 className='text-3xl text-center pb-10 font-semibold text-gray-800'>Servicios adicionales</h2>
         <Carousel slides={homeBanner} />
       </section>
 

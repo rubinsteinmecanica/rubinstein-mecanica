@@ -7,7 +7,7 @@ export default function Services() {
       <div className="max-w-screen-lg mx-auto px-4">
 
         <section className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">Nuestros Servicios</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-navy-800">Nuestros Servicios Adicionales</h1>
         </section>
 
         <section id="grua" className="grid grid-cols-1 bg-gray-50 px-4 py-8 md:grid-cols-2 gap-12 px-4 md:px-8 lg:px-10 xl:px-16 mt-16">
