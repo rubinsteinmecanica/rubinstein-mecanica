@@ -66,6 +66,7 @@ export default function ContactForm() {
                             <option>Audi</option>
                             <option>Baic</option>
                             <option>BMW</option>
+                            <option>Brilliance</option>
                             <option>BYD</option>
                             <option>Changan</option>
                             <option>Chery</option>
@@ -74,6 +75,7 @@ export default function ContactForm() {
                             <option>Daihatsu</option>
                             <option>Daewoo</option>
                             <option>Dodge</option>
+                            <option>DS AUTOMOBILES</option>
                             <option>Fiat</option>
                             <option>Foton</option>
                             <option>Ford</option>

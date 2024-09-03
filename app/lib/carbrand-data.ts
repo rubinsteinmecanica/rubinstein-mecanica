@@ -193,4 +193,12 @@ export const carBrand: Car[] = [
         id: "Citroën",
         image_url: '/logos/Citroen.png',
     },
+    {
+        id: "DS AUTOMOBILES",
+        image_url: '/logos/ds.png',
+    },
+    {
+        id: "BRILLIANCE",
+        image_url: '/logos/brilliance.jpg',
+    }
 ]
