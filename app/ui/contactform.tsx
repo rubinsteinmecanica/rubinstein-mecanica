@@ -70,6 +70,7 @@ export default function ContactForm() {
                             <option>Changan</option>
                             <option>Chery</option>
                             <option>Chevrolet</option>
+                            <option>Citroën</option>
                             <option>Daihatsu</option>
                             <option>Daewoo</option>
                             <option>Dodge</option>
@@ -89,7 +90,7 @@ export default function ContactForm() {
                             <option>Jetour</option>
                             <option>Kia</option>
                             <option>Lexus</option>
-                            <option>Magindra</option>
+                            <option>Mahindra</option>
                             <option>Mazda</option>
                             <option>Mercedes-Benz</option>
                             <option>Mitsubishi</option>
@@ -100,8 +101,8 @@ export default function ContactForm() {
                             <option>Renault</option>
                             <option>Seat</option>
                             <option>Skoda</option>
-                            <option>SsanYong</option>
-                            <option>Subary</option>
+                            <option>SsangYong</option>
+                            <option>Subaru</option>
                             <option>Suzuki</option>
                             <option>Tata</option>
                             <option>Toyota</option>

@@ -14,7 +14,7 @@ export const carBrand: Car[] = [
         image_url: '/logos/NISSAN.png',
     },
     {
-        id: 'SsandYong',
+        id: 'SsangYong',
         image_url: '/logos/ssangyong.png',
     },
     {
@@ -134,7 +134,7 @@ export const carBrand: Car[] = [
         image_url: '/logos/isuzu.png',
     },
     {
-        id: 'Magindra',
+        id: 'Mahindra',
         image_url: '/logos/MAHINDRA.png',
     },
     {
@@ -188,5 +188,9 @@ export const carBrand: Car[] = [
     {
         id: "GMC",
         image_url: '/logos/GMC.jpg',
-    }
+    },
+    {
+        id: "Citroën",
+        image_url: '/logos/Citroen.png',
+    },
 ]
