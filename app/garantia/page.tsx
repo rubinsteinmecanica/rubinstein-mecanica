@@ -60,7 +60,7 @@ export default function Garantia() {
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800">Rodrigo Sáez Madrid</h2>
             <Image
-              src="/acerca/rodrigo.jpg"
+              src="/garantia/rodrigo.jpg"
               width={300}
               height={200}
               alt="Rodrigo Sáez Madrid"

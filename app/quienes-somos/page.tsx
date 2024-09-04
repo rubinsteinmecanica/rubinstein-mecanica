@@ -91,7 +91,7 @@ export default function AboutUs() {
 
             <div className="flex flex-col items-center bg-white rounded-lg shadow-lg p-6">
               <Image
-                src="/acerca/cesar.jpg"
+                src="/acerca/cesar-ch.jpg"
                 width={150}
                 height={150}
                 alt="Cesar Chavarría A."
