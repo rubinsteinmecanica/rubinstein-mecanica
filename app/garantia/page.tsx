@@ -57,8 +57,11 @@ export default function Garantia() {
 
       {showDetails && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800">Rodrigo Sáez Madrid</h2>
+          <div className="bg-white p-6 rounded-lg shadow-lg mx-auto 
+      max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+            <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-gray-800">
+              Rodrigo Sáez Madrid
+            </h2>
             <Image
               src="/garantia/rodrigo.jpg"
               width={300}
@@ -81,6 +84,7 @@ export default function Garantia() {
           </div>
         </div>
       )}
+
 
       <div className="mt-12 mb-12 text-center bg-blue-700 text-white py-8 px-6 rounded-lg shadow-2xl max-w-4xl mx-auto">
         <div className="flex justify-center mb-4">
